@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Adminstration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Source.css">
+        <script src="js/Sourcejs1.js"></script>
+        <script src="js/Sourcejs2.js"></script>
+ <style>
+     /* Remove the navbar's default margin-bottom and rounded borders */
+   .navbar {
+       margin-bottom: 0;
+       border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+      position:absolute;
+      bottom:0;
+      width:100%;
+      font-weight: bold;
+      font-family: arial;
+      
+    }
+
+</style>
+</head>
+
+<body>
+  
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">T.K.C Movies</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="Home.html">Home</a></li>
+        <li class="active"><a href="Adminstration.html">Adminstration</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="#">Contact Support</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br><br><br><br><br><br>
+
+<div class="container">
+  
+  <form class="form-horizontal" role="form" action="AdminValidation.jsp">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">UserName:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="UserName" placeholder="Admin Username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" name="pwd" placeholder=" password">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Login</button>
+      </div>
+    </div>
+  <tr>
+   
+  
+   </tr>
+  </form>
+  
+</div>
+
+
+
+<footer class="container-fluid text-center">
+             <p> Copyrights © T.K.C Movies</p>
+</footer>
+
+</body>
+
+</html>

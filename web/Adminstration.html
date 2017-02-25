@@ -30,7 +30,22 @@ and open the template in the editor.
       font-family: arial;
       
     }
-
+  
+    @font-face{
+     font-family: 'My-Custom-Font';
+     src: url('fonts/Barrio-Regular.ttf');
+   }
+    
+    .hed{
+        font-family: My-Custom-font;
+        font-size: 2em;
+        color: tomato;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+         margin: 50px 0px 50px 0px;
+    }
+    
 </style>
 </head>
 
@@ -45,7 +60,7 @@ and open the template in the editor.
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">T.K.C Movies</a>
+      <a class="navbar-brand" href="#">Sound & Stage Movies</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -61,7 +76,11 @@ and open the template in the editor.
   </div>
 </nav>
 
-<br><br><br><br><br><br><br>
+ 
+    
+    <div class ="hed">
+         Adminstrator  Login 
+    </div>
 
 <div class="container">
   
@@ -101,7 +120,7 @@ and open the template in the editor.
 
 
 <footer class="container-fluid text-center">
-             <p> Copyrights © T.K.C Movies</p>
+             <p> Copyrights © Sound & Stage Movies</p>
 </footer>
 
 </body>

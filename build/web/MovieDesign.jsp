@@ -11,6 +11,7 @@
     boolean invalidRequest = Moviename == null;
     
     String  Username = (String)session.getAttribute("Un");
+    String Email = (String)session.getAttribute("email");
 %>
 
 
@@ -145,7 +146,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">T.K.C Movies</a>
+      <a class="navbar-brand" href="#">Sound & Stage Movies</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -171,7 +172,7 @@
 
   <div class="w3-half">
     &nbsp
-    <iframe width="100px%" height="360px" src="<%=rs.getString(5) %>" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="360px" src="<%=rs.getString(5) %>" frameborder="0" allowfullscreen></iframe>
       
     
   </div>
@@ -218,8 +219,12 @@
 <div align="center">
   <form class="form-horizonatal" role="form" action="Book.jsp" >
     
+    <% session.setAttribute("Moviename",Moviename);
+       session.setAttribute("Un", Username);
+       session.setAttribute("email",Email);
+    %>
     <button type="submit" class="buttonA ">BooK Now !!</button>
-    <% session.setAttribute("MovieName",Moviename); %>
+
 
   </form>
 
@@ -227,7 +232,7 @@
 <br>
 
 <footer class="container-fluid text-center">
-             <p> Copyrights © T.K.C Movies</p>
+             <p> Copyrights © Sound & Stage Movies</p>
 </footer>
 
 </body>
@@ -244,3 +249,5 @@
     </body>
     <%}%>
 </html>
+
+

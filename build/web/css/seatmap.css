@@ -1,0 +1,75 @@
+html, body { height: 100%; }
+
+body { position: relative; }
+
+.seat-map-wrapper {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+td {
+	border: 1px solid #49ba8e;
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 26%;
+	text-align: center;
+	color: #b3b3b3;
+}
+
+th { color: #b3b3b3; }
+td:hover {
+	background: #49ba8e;
+	cursor: pointer;
+	color: #fff;
+}
+
+.seat-selected {
+	background-color: #d2483f !important;
+	color: #fff !important;
+	border-color: #d2483f !important;
+}
+
+.blocked {
+	background-color: #aeaeae !important;
+	color: #1b1b1b !important;
+	border-color: #aeaeae !important;
+	pointer-events: none;
+}
+
+.screen-view {
+	display:flex; 
+	height: 2em;
+    width: 24em;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: .6em;
+    margin-bottom: 2em;
+}
+
+.header-title {
+	text-transform: uppercase;
+	font-size: 3em; color: #49ba8e;
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+.book-btn {
+	position: absolute;
+    right: 0; box-sizing: border-box;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 3em;
+    color: tomato; cursor: pointer;
+    border: 2px solid tomato;
+
+    transition: all 0.2s ease-in-out;
+}
+.book-btn:hover {
+	color: #fff; background-color: tomato;
+}
+.book-btn:active {
+	transform: translateY(5%);
+}

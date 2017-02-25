@@ -68,7 +68,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">T.K.C Movies</a>
+      <a class="navbar-brand" href="#">Sound & Stage Movies</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -78,7 +78,7 @@
         <li><a href="#">Contact Support</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li ><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li ><a href="Logout.jsp"><span class="glyphicon glyphicon-log-in"></span> Logout, <%=Username%></a></li>
       </ul>
     </div>
   </div>
@@ -234,7 +234,7 @@
 
 
 <footer class="container-fluid text-center">
-             <p> Copyrights © T.K.C Movies</p>
+             <p> Copyrights © Sound & Stage Movies</p>
 </footer>
 
 

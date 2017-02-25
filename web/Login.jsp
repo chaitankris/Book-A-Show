@@ -23,6 +23,7 @@
       Login ="true";
       session.setAttribute("login" , Login);
       session.setAttribute("fn", rs.getString(1));
+      session.setAttribute("email",Email);
       response.sendRedirect("UserPage.jsp");
   }
   else{

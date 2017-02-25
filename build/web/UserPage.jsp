@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <% String Un ="";
     String  Username = (String)session.getAttribute("fn");
+    String Email =(String )session.getAttribute("email");
 %>
 
 
@@ -71,7 +72,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Home.html">T.K.C Movies</a>
+      <a class="navbar-brand" href="Home.html">Sound & Stage Movies</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -86,7 +87,8 @@
     </div>
   </div>
 </nav>
-<% session.setAttribute("Un",Username); %>
+<% session.setAttribute("Un",Username);
+   session.setAttribute("email",Email);%>
 
 <div class="container" style="width:100%; margin: 0 auto">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -214,7 +216,7 @@
 
 
 <footer class="container-fluid text-center">
-  <p> Copyrights © T.K.C Movies</p>
+  <p> Copyrights © Sound & Stage Movies</p>
 </footer>
 
 </body>

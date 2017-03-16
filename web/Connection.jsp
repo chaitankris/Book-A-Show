@@ -14,7 +14,7 @@
 Class.forName("oracle.jdbc.driver.OracleDriver");
 String uri ="jdbc:oracle:thin:@localhost:1521:xe";
 String username ="system";
-String password ="raj11199";
+String password ="*********";
 Connection con=DriverManager.getConnection(uri,username,password);
 
 %>
